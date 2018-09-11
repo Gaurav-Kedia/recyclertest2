@@ -38,6 +38,10 @@ public class AdapetClass extends RecyclerView.Adapter<AdapetClass.NumberViewHold
         return number;
     }
 
+    public void swap(){
+        this.notifyDataSetChanged();
+    }
+
     class NumberViewHolder extends RecyclerView.ViewHolder{
             TextView txt;
         public NumberViewHolder(View itemView) {
